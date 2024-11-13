@@ -1,0 +1,43 @@
+---
+name: ci
+
+on:
+  pull_request:
+    branches: ["*"]
+    paths:
+      - ".github/workflows/ci.yml"
+      - "colors**"
+      - "lua/**"
+      - "spec/**"
+      - "init.lua"
+  push:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+      - uses: rhysd/action-setup-vim@acff3bc31a82af69a26f90af710926fdab04d00e # v1.3.5
+        with:
+          neovim: true
+          version: v0.10.2
+      
+      - name: bootstrap plenary.nvim
+        run: |
+          set -euo pipefail
+
+          export HEAD=2d9b06177a975543726ce5c73fca176cedbffe9d
+          export CWD=$(pwd)
+
+          mkdir -p ~/.local/share/nvim/site/pack/vendor/start/plenary.nvim
+          cd ~/.local/share/nvim/site/pack/vendor/start/plenary.nvim
+          git init
+          git remote add origin https://github.com/nvim-lua/plenary.nvim
+          git fetch --depth 1 origin $HEAD
+          git reset --hard $HEAD
+
+      - name: running tests
+        run: |
+          nvim --headless --noplugin -u spec/init.vim -c "PlenaryBustedDirectory spec/ {minimal_init = 'tests/init.vim'}"
