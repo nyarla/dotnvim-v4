@@ -6,7 +6,7 @@ on:
     branches: ["*"]
     paths:
       - ".github/workflows/ci.yml"
-      - "colors**"
+      - "colors/**"
       - "lua/**"
       - "spec/**"
       - "init.lua"
@@ -40,4 +40,4 @@ jobs:
 
       - name: running tests
         run: |
-          nvim --headless --noplugin -u spec/init.vim -c "PlenaryBustedDirectory spec/ {minimal_init = 'tests/init.vim'}"
+          nvim --headless --noplugin -u spec/init.vim -c "PlenaryBustedDirectory spec/ {minimal_init = 'spec/init.vim'}"
