@@ -8,6 +8,15 @@ local hex = function(name, light, dark)
   return vim.o.background == "light" and theme[name .. light] or theme[name .. dark]
 end
 
+---@param rule string The highlight rule for NeoVim
+---@param opts table The arguments of vim.api.nvim_set_hl
+local hi = function(rule, opts)
+  opts.force = true
+  opts.cterm = opts.cterm or {}
+
+  vim.api.nvim_set_hl(0, rule, opts)
+end
+
 -- Terminal
 
 -- black
@@ -41,3 +50,53 @@ vim.g.terminal_color_14 = hex("cyan", 60, 90)
 -- white
 vim.g.terminal_color_7 = hex("gray", 65, 100)
 vim.g.terminal_color_15 = hex("gray", 85, 100)
+
+-- Highligtt
+local highlights = {
+  -- Common
+  ["Normal"] = { fg = hex("gray", 15, 85), bg = hex("gray", 90, 0) },
+  ["Bold"] = { bold = true },
+  ["Underline"] = { underline = true },
+  ["Directory"] = { fg = hex("cyan", 35, 90), bold = true },
+  ["NonText"] = { fg = hex("gray", 50, 50), bold = true },
+  ["SpecialKey"] = { fg = hex("gray", 90, 15), bg = hex("cyan", 50, 80), bold = true },
+  ["EndOfBuffer"] = { fg = hex("gray", 50, 50) },
+  -- text
+  ["Title"] = { fg = hex("gray", 0, 100) },
+  ["Comment"] = { fg = hex("gray", 60, 80) },
+  -- literal
+  ["String"] = { fg = hex("yellow", 50, 95) },
+  ["Character"] = { fg = hex("cyan", 50, 95) },
+  ["Boolean"] = { fg = hex("green", 50, 85), bold = true },
+  ["Number"] = { fg = hex("orange", 50, 95) },
+  ["Float"] = { fg = hex("rime", 50, 80) },
+  -- variable
+  ["Identifier"] = { fg = hex("gray", 15, 90), bold = true },
+  ["Constant"] = { fg = hex("blue", 15, 90), bold = true },
+  ["Type"] = { fg = hex("green", 50, 80), bold = true },
+  -- function
+  ["Function"] = { fg = hex("blue", 40, 80), bold = true },
+  -- operator
+  ["Statement"] = { fg = hex("green", 40, 80), bold = true },
+  ["Operator"] = { bold = true },
+  -- others
+  ["PreProc"] = { fg = hex("pink", 30, 90) },
+  ["Tag"] = { fg = hex("green", 40, 80) },
+  ["Special"] = { fg = hex("gray", 40, 80) },
+  ["Ignore"] = { fg = hex("gray", 50, 50) },
+  ["Todo"] = { fg = hex("gray", 15, 15), bg = hex("yellow", 85, 85) },
+  -- Interface
+  -- cursor
+  ["Cursor"] = { reverse = true },
+  ["Visual"] = { fg = hex("gray", 15, 15), bg = hex("blue", 90, 90) },
+  ["CursorLine"] = { bg = hex("gray", 95, 20) },
+  -- line number
+  ["LineNr"] = { fg = hex("gray", 50, 50) },
+  ["CursorLineNr"] = { fg = hex("gray", 0, 100) },
+  -- search
+  ["Search"] = { bold = true, underline = true },
+  ["IncSearch"] = { bold = true, underline = true },
+}
+for rule, opts in pairs(highlights) do
+  hi(rule, opts)
+end
