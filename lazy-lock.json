@@ -1,5 +1,6 @@
 {
   "editorconfig.nvim": { "branch": "master", "commit": "5b9e303e1d6f7abfe616ce4cc8d3fffc554790bf" },
   "lazy.nvim": { "branch": "master", "commit": "7e6c863bc7563efbdd757a310d17ebc95166cef3" },
+  "nvim-treesitter": { "branch": "master", "commit": "cfc6f2c117aaaa82f19bcce44deec2c194d900ab" },
   "vim-perl": { "branch": "dev", "commit": "25ecb0061a3558d242a471b162aad20e4308815d" }
 }
