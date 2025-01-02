@@ -54,6 +54,14 @@ function M.setup()
   if M.rev() ~= M.lazy.rev then
     M.init()
   end
+
+  vim.opt.rtp:prepend(M.lazy.path)
+
+  require("lazy").setup({
+    spec = {
+      { import = "plugins" },
+    },
+  })
 end
 
 return M
