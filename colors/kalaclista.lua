@@ -96,6 +96,17 @@ local highlights = {
   -- search
   ["Search"] = { bold = true, underline = true },
   ["IncSearch"] = { bold = true, underline = true },
+  -- popup
+  ["Pmenu"] = { fg = hex("gray", 0, 100), bg = hex("gray", 100, 0) },
+  ["PmenuSel"] = { fg = hex("gray", 100, 0), bg = hex("blue", 20, 80) },
+  ["PmenuSbar"] = { fg = hex("gray", 30, 70), bg = hex("gray", 100, 0) },
+  ["PmenuThumb"] = { bold = true },
+  -- Plugin
+  -- ------
+  -- neo-tree
+  ["NeoTreeDirectoryIcon"] = { fg = hex("yellow", 20, 80) },
+  ["NeoTreeTabActive"] = { fg = hex("gray", 0, 100), bg = hex("green", 30, 80) },
+  ["NeoTreeTabInactive"] = { fg = hex("gray", 0, 70), bg = hex("gray", 100, 0) },
 }
 for rule, opts in pairs(highlights) do
   hi(rule, opts)
