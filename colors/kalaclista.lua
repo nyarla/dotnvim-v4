@@ -53,7 +53,10 @@ vim.g.terminal_color_15 = hex("gray", 85, 100)
 
 -- Highligtt
 local highlights = {
+  -- ------
   -- Common
+  -- ======
+  -- common
   ["Normal"] = { fg = hex("gray", 15, 85), bg = hex("gray", 90, 0) },
   ["Bold"] = { bold = true },
   ["Underline"] = { underline = true },
@@ -65,10 +68,10 @@ local highlights = {
   ["Title"] = { fg = hex("gray", 0, 100) },
   ["Comment"] = { fg = hex("gray", 60, 80) },
   -- literal
-  ["String"] = { fg = hex("yellow", 50, 95) },
-  ["Character"] = { fg = hex("cyan", 50, 95) },
+  ["String"] = { fg = hex("yellow", 50, 90) },
+  ["Character"] = { fg = hex("cyan", 50, 90) },
   ["Boolean"] = { fg = hex("green", 50, 85), bold = true },
-  ["Number"] = { fg = hex("orange", 50, 95) },
+  ["Number"] = { fg = hex("orange", 50, 90) },
   ["Float"] = { fg = hex("rime", 50, 80) },
   -- variable
   ["Identifier"] = { fg = hex("gray", 15, 90), bold = true },
@@ -85,7 +88,12 @@ local highlights = {
   ["Special"] = { fg = hex("gray", 40, 80) },
   ["Ignore"] = { fg = hex("gray", 50, 50) },
   ["Todo"] = { fg = hex("gray", 15, 15), bg = hex("yellow", 85, 85) },
+  -- =----
+  -- Files
+  -- =====
+  -- --------
   -- Interface
+  -- =========
   -- cursor
   ["Cursor"] = { reverse = true },
   ["Visual"] = { fg = hex("gray", 15, 15), bg = hex("blue", 90, 90) },
@@ -96,18 +104,56 @@ local highlights = {
   -- search
   ["Search"] = { bold = true, underline = true },
   ["IncSearch"] = { bold = true, underline = true },
+  -- message
+  ["MoreMsg"] = { fg = hex("green", 20, 80), bold = true },
+  ["ModeMsg"] = { fg = hex("blue", 20, 80), bold = true },
+  ["Question"] = { fg = hex("yellow", 20, 80), bold = true },
+  ["MatchPattern"] = { fg = hex("red", 20, 80), underline = true },
+  ["ErrorMsg"] = { fg = hex("red", 20, 80) },
+  ["WarningMsg"] = { fg = hex("orange", 20, 80) },
   -- popup
   ["Pmenu"] = { fg = hex("gray", 0, 100), bg = hex("gray", 100, 0) },
   ["PmenuSel"] = { fg = hex("gray", 100, 0), bg = hex("blue", 20, 80) },
   ["PmenuSbar"] = { fg = hex("gray", 30, 70), bg = hex("gray", 100, 0) },
   ["PmenuThumb"] = { bold = true },
-  -- Plugin
   -- ------
+  -- Plugin
+  -- ======
   -- neo-tree
   ["NeoTreeDirectoryIcon"] = { fg = hex("yellow", 20, 80) },
   ["NeoTreeTabActive"] = { fg = hex("gray", 0, 100), bg = hex("green", 30, 80) },
   ["NeoTreeTabInactive"] = { fg = hex("gray", 0, 70), bg = hex("gray", 100, 0) },
+  -- nvim-cmp
+  ["CmpItemAbbrMatchFuzzy"] = { fg = hex("gray", 100, 0), bg = hex("blue", 40, 90) },
+  ["CmpItemAbbrMatch"] = { fg = hex("gray", 100, 0), bg = hex("blue", 40, 75) },
+  ["CmpItemKindClass"] = { link = "Identifier" },
+  ["CmpItemKindColor"] = { link = "CmpItemKind" },
+  ["CmpItemKindConstant"] = { link = "Constant" },
+  ["CmpItemKindConstructor"] = { link = "Function" },
+  ["CmpItemKindCopilot"] = { fg = hex("gray", 0, 100) },
+  ["CmpItemKindEnum"] = { link = "Identifier" },
+  ["CmpItemKindEnumMember"] = { link = "Type" },
+  ["CmpItemKindEvent"] = { link = "Statement" },
+  ["CmpItemKindField"] = { link = "Type" },
+  ["CmpItemKindFile"] = { fg = hex("gray", 0, 100) },
+  ["CmpItemKindFolder"] = { fg = hex("yellow", 20, 80) },
+  ["CmpItemKindFunction"] = { link = "Function" },
+  ["CmpItemKindInterface"] = { link = "Identifier" },
+  ["CmpItemKindKeyword"] = { link = "Identifier" },
+  ["CmpItemKindMethod"] = { link = "Function" },
+  ["CmpItemKindModule"] = { link = "Identifier" },
+  ["CmpItemKindOperator"] = { link = "Operator" },
+  ["CmpItemKindProperty"] = { link = "Type" },
+  ["CmpItemKindReference"] = { link = "Identifier" },
+  ["CmpItemKindSnippet"] = { link = "Special" },
+  ["CmpItemKindStruct"] = { link = "Constant" },
+  ["CmpItemKindText"] = { fg = hex("blue", 20, 80) },
+  ["CmpItemKindTypeParameter"] = { link = "Identifier" },
+  ["CmpItemKindUnit"] = { link = "Type" },
+  ["CmpItemKindValue"] = { link = "Identifier" },
+  ["CmpItemKindVariable"] = { link = "Identifier" },
 }
+
 for rule, opts in pairs(highlights) do
   hi(rule, opts)
 end
