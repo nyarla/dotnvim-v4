@@ -6,6 +6,8 @@ describe("lib", function()
       local key = "gray" .. (5 * idx)
 
       assert.truthy(theme[key])
+      assert.is.equal(string.len(theme[key]), 7)
+      assert.truthy(string.match(theme[key], "^#([a-fA-F0-9]+)"))
     end
 
     local keys = { "red", "orange", "yellow", "rime", "green", "cyan", "sky", "blue", "purple", "pink" }
@@ -14,6 +16,8 @@ describe("lib", function()
         local key = name .. (idx * 5)
 
         assert.truthy(theme[key])
+        assert.is.equal(string.len(theme[key]), 7)
+        assert.truthy(string.match(theme[key], "^#([a-fA-F0-9]+)"))
       end
     end
   end)
