@@ -4,6 +4,6 @@ describe("lib", function()
   it("options#opt", function()
     options.opt("shiftwidth", 3)
 
-    assert.is(vim.opt.shiftwidth, 3)
+    assert.is.equal(vim.opt.shiftwidth["_value"], 3)
   end)
 end)
