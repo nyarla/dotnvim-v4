@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "neovim/nvim-lspconfig",
-  commit = "040001d85e9190a904d0e35ef5774633e14d8475", -- v1.2.0
+  commit = "66bc018936c6ff76beb75f89d986af6442db4001",
   -- loading
   lazy = true,
 }

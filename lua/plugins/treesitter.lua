@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "nvim-treesitter/nvim-treesitter",
-  commit = "cfc6f2c117aaaa82f19bcce44deec2c194d900ab", -- v0.9.3
+  commit = "4e701776f8824fc188a6254f57d080971ce28c92",
   build = ":TSUpdate",
   -- config
   main = "nvim-treesitter.configs",
