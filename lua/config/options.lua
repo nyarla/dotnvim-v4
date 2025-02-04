@@ -41,6 +41,13 @@ function M.setup()
   vim.fn.setcellwidths(require("lib.wcwidth"))
 
   -- set diagnostic config
+  vim.api.nvim_create_autocmd({ "CursorHold" }, {
+    pattern = "*",
+    callback = function()
+      vim.diagnostic.open_float()
+    end,
+  })
+
   vim.diagnostic.config({
     float = {
       scope = "line",
