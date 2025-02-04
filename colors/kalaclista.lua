@@ -121,7 +121,7 @@ hi("CursorLine", nil, T.emphasis_background)
 
 hi("Virtual", T.black, T.highlight_blue)
 
-hi("LineNr", T.highlight_foreground)
+hi("LineNr", T.dim_foreground)
 hi("CursorLineNr", T.highlight_white, nil, { bold = true })
 
 hi("SignColumn", nil, T.background)
