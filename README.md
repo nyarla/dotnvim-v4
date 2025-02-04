@@ -11,6 +11,7 @@
 - [cmp-treesitter](https://github.com/ray-x/cmp-treesitter) - [GPL-3.0-only](https://github.com/ray-x/cmp-treesitter/blob/958fcfa0d8ce46d215e19cc3992c542f576c4123/LICENSE)
 - [cmp-vsnip](https://github.com/hrsh7th/cmp-vsnip) - [MIT](https://github.com/hrsh7th/cmp-vsnip/blob/989a8a73c44e926199bfd05fa7a516d51f2d2752/LICENSE)
 - [codeium](https://github.com/Exafunction/codeium.nvim) - [MIT](https://github.com/Exafunction/codeium.nvim/blob/27d2b1ce8c7ba14dbf6e4504bdea8e5548be5476/LICENSE)
+- [conform](https://github.com/stevearc/conform.nvim) - [MIT](https://github.com/stevearc/conform.nvim/blob/363243c03102a531a8203311d4f2ae704c620d9b/LICENSE)
 - [editorconfig](https://github.com/gpanders/editorconfig.nvim) - [GPL-3.0-only](https://github.com/gpanders/editorconfig.nvim/blob/5b9e303e1d6f7abfe616ce4cc8d3fffc554790bf/LICENSE)
 - [lspkind](https://github.com/onsails/lspkind.nvim) - [MIT](https://github.com/onsails/lspkind.nvim/blob/d79a1c3299ad0ef94e255d045bed9fa26025dab6/LICENSE)
 - [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim) - [MIT](https://github.com/nvim-neo-tree/neo-tree.nvim/blob/5d172e8315444dbc32867d1c7b04d8e7e68ec4e1/LICENSE)
