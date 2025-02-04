@@ -1,5 +1,9 @@
 local M = {}
 
+-- Tables
+-- ======
+--
+
 M.gray0 = "#000000"
 M.gray5 = "#111111"
 M.gray10 = "#1b1b1b"
@@ -221,5 +225,96 @@ M.pink80 = "#ff9bf2"
 M.pink85 = "#ffa9ff"
 M.pink90 = "#ffb7ff"
 M.pink95 = "#ffc5ff"
+
+-- Light theme
+-- ===========
+--
+
+M.light = {}
+
+M.light.black = M.gray20
+M.light.red = M.red20
+M.light.green = M.green20
+M.light.yellow = M.yellow20
+M.light.blue = M.blue20
+M.light.magenta = M.ping20
+M.light.cyan = M.cyan20
+M.light.white = M.gray50
+
+M.light.highlight_black = M.gray30
+M.light.highlight_red = M.red30
+M.light.highlight_green = M.green30
+M.light.highlight_yellow = M.yellow30
+M.light.highlight_blue = M.blue30
+M.light.highlight_magenta = M.ping30
+M.light.highlight_cyan = M.cyan30
+M.light.highlight_white = M.gray95
+
+M.light.emphasis_red = M.red25
+M.light.emphasis_orange = M.orange25
+M.light.emphasis_blue = M.blue25
+M.light.emphasis_green = M.green25
+M.light.emphasis_yellow = M.yellow25
+M.light.emphasis_white = M.gray55
+
+M.light.dim_black = M.gray10
+M.light.dim_blue = M.blue10
+M.light.dim_white = M.gray40
+
+M.light.foreground = M.light.black
+M.light.background = M.light.highlight_white
+
+M.light.highlight_background = M.light.highlight_white
+
+M.light.emphasis_foreground = M.light.highlight_black
+M.light.emphasis_background = M.gray80
+
+M.light.dim_foreground = M.light.dim_white
+
+-- Dark theme
+-- ==========
+--
+
+M.dark = {}
+
+M.dark.black = M.gray5
+M.dark.red = M.red65
+M.dark.green = M.green85
+M.dark.yellow = M.yellow85
+M.dark.blue = M.blue85
+M.dark.magenta = M.ping85
+M.dark.cyan = M.cyan85
+M.dark.white = M.gray95
+
+M.dark.highlight_black = M.gray65
+M.dark.highlight_red = M.red75
+M.dark.highlight_green = M.green90
+M.dark.highlight_yellow = M.yellow90
+M.dark.highlight_blue = M.blue90
+M.dark.highlight_magenta = M.ping90
+M.dark.highlight_cyan = M.cyan95
+M.dark.highlight_white = M.gray100
+
+M.dark.emphasis_black = M.gray30
+M.dark.emphasis_red = M.red80
+M.dark.emphasis_orange = M.orange80
+M.dark.emphasis_blue = M.blue80
+M.dark.emphasis_green = M.green85
+M.dark.emphasis_yellow = M.yellow85
+M.dark.emphasis_white = M.gray90
+
+M.dark.dim_black = M.gray30
+M.dark.dim_blue = M.blue50
+M.dark.dim_whilte = M.gray50
+
+M.dark.foreground = M.dark.highlight_white
+M.dark.background = M.dark.black
+
+M.dark.highlight_background = M.dark.highlight_black
+
+M.dark.emphasis_foreground = M.dark.emphasis_white
+M.dark.emphasis_background = M.dark.emphasis_black
+
+M.dark.dim_foreground = M.dark.dim_white
 
 return M
