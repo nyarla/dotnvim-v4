@@ -20,5 +20,12 @@ describe("lib", function()
         assert.truthy(string.match(theme[key], "^#([a-fA-F0-9]+)"))
       end
     end
+
+    for _, name in ipairs({ "light", "dark" }) do
+      for _, val in pairs(theme[name]) do
+        assert.truthy(val)
+        assert.truthy(string.match(val, "^#([a-fA-F0-9]+)"))
+      end
+    end
   end)
 end)

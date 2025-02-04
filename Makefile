@@ -8,4 +8,12 @@ confirm:
 	env \
 		XDG_CONFIG_HOME=/tmp/nvim/.config \
 		XDG_DATA_HOME=/tmp/nvim/.local/share \
-		nvim-run
+		nvim-run $(CMD)
+
+light: export CMD := --cmd "set background=light"
+light:
+	@$(MAKE) confirm
+
+dark: export CMD := --cmd "set background=dark"
+dark:
+	@$(MAKE) confirm
