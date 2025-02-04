@@ -7,7 +7,13 @@ local spec = {
     "plenary.nvim",
     "nvim-cmp",
   },
-  opts = {},
+  opts = {
+    virtual_text = {
+      filetypes = {
+        ["neo-tree"] = false,
+      },
+    },
+  },
   -- loading
   enabled = function()
     local hostname = vim.system({ "hostname" }):wait().stdout
