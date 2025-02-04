@@ -255,6 +255,7 @@ M.light.emphasis_orange = M.orange25
 M.light.emphasis_blue = M.blue25
 M.light.emphasis_green = M.green25
 M.light.emphasis_yellow = M.yellow25
+M.light.emphasis_cyan = M.cyan25
 M.light.emphasis_white = M.gray55
 
 M.light.dim_black = M.gray10
@@ -301,6 +302,7 @@ M.dark.emphasis_orange = M.orange80
 M.dark.emphasis_blue = M.blue80
 M.dark.emphasis_green = M.green85
 M.dark.emphasis_yellow = M.yellow85
+M.dark.emphasis_cyan = M.cyan80
 M.dark.emphasis_white = M.gray90
 
 M.dark.dim_black = M.gray30

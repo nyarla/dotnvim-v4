@@ -143,6 +143,11 @@ hi("PmemuSel", T.background, T.emphasis_blue)
 hi("PmenuSbar", T.emphasis_white)
 hi("PmemuThumb", nil, nil, { bold = true })
 
+hi("DiagnosticWarn", T.emphasis_orange)
+hi("DiagnosticError", T.emphasis_red)
+hi("DiagnosticHint", T.emphasis_cyan)
+hi("DiagnosticInfo", T.emphasis_blue)
+
 -- File manager
 --
 hi("Directory", T.highlight_yellow)
