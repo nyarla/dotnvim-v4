@@ -305,7 +305,7 @@ M.dark.emphasis_white = M.gray90
 
 M.dark.dim_black = M.gray30
 M.dark.dim_blue = M.blue50
-M.dark.dim_whilte = M.gray50
+M.dark.dim_white = M.gray50
 
 M.dark.foreground = M.dark.highlight_white
 M.dark.background = M.dark.black
