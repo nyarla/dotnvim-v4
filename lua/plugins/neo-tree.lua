@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "nvim-neo-tree/neo-tree.nvim",
-  commit = "e6645ecfcba3e064446a6def1c10d788c9873f51",
+  commit = "5d172e8315444dbc32867d1c7b04d8e7e68ec4e1",
   -- config
   dependencies = {
     "plenary.nvim",

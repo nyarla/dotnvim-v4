@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "s1n7ax/nvim-window-picker",
-  commit = "41cfaa428577c53552200a404ae9b3a0b5719706",
+  commit = "0dfef64eaf063e1cd27983ab11a30e7bc5b74fac",
   -- config
   opts = {
     hint = "floating-big-letter",

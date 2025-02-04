@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "mfussenegger/nvim-lint",
-  commit = "dfa45de973c3ce7bd1b9a6d346f896a68ad07e44",
+  commit = "789b7ada1b4f00e08d026dffde410dcfa6a0ba87",
   -- config
   opts = {
     linters_by_ft = {
