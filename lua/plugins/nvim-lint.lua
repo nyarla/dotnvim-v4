@@ -16,8 +16,10 @@ local spec = {
   config = function(_, opts)
     local lint = require("lint")
 
-    for key, value in pairs(opts) do
-      lint[key] = value
+    lint.linters_by_ft = opts.linters_by_ft
+
+    for name, linter in pairs(opts.linters) do
+      lint.linters[name] = linter
     end
 
     vim.api.nvim_create_autocmd({ "InsertEnter", "BufWritePost", "TextChanged" }, {
