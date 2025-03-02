@@ -25,7 +25,7 @@ local spec = {
         { name = "treesitter" },
         { name = "buffer" },
       },
-      mapping = cmp.mapping.preset.insert({
+      mapping = cmp.mapping.preset.cmdline({
         ["<CR>"] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true }),
       }),
     })
@@ -34,7 +34,7 @@ local spec = {
         { name = "cmdline" },
         { name = "path" },
       },
-      mapping = cmp.mapping.preset.insert({
+      mapping = cmp.mapping.preset.cmdline({
         ["<CR>"] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true }),
       }),
     })
