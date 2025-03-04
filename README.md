@@ -25,7 +25,7 @@ The using plugins lisenses as follows:
 - [nui](https://github.com/MunifTanjim/nui.nvim/) - [MIT](https://github.com/MunifTanjim/nui.nvim/blob/53e907ffe5eedebdca1cd503b00aa8692068ca46/LICENSE)
 - [nvim-cmp](https://github.com/hrsh7th/nvim-cmp/) - [MIT](https://github.com/hrsh7th/nvim-cmp/blob/c27370703e798666486e3064b64d59eaf4bdc6d5/LICENSE)
 - [nvim-lint](https://github.com/mfussenegger/nvim-lint/) - [GPL-3.0-or-later](https://github.com/mfussenegger/nvim-lint/blob/6e9dd545a1af204c4022a8fcd99727ea41ffdcc8/LICENSE.txt)
-- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/) - [Apacle-2.0](https://github.com/neovim/nvim-lspconfig/blob/6b63bdf2399b9bedf93297d98419550523a9ad68/LICENSE.md)
+- [nvim-lspconfig](https://github.com/neovim/nvim-lspconfig/) - [Apache-2.0](https://github.com/neovim/nvim-lspconfig/blob/6b63bdf2399b9bedf93297d98419550523a9ad68/LICENSE.md)
 - [nvim-web-devicons](https://github.com/nvim-tree/nvim-web-devicons/) - [MIT](https://github.com/nvim-tree/nvim-web-devicons/blob/ab4cfee554e501f497bce0856788d43cf2eb93d7/LICENSE)
 - [nvim-window-picker](https://github.com/s1n7ax/nvim-window-picker/) - [MIT](https://github.com/s1n7ax/nvim-window-picker/blob/6382540b2ae5de6c793d4aa2e3fe6dbb518505ec/LICENSE)
 - [perl](https://github.com/vim-perl/vim-perl/) - [Vim](https://github.com/vim-perl/vim-perl/blob/25ecb0061a3558d242a471b162aad20e4308815d/COPYING)

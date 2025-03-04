@@ -5,7 +5,7 @@ local spec = {
   -- sbom
   license = {
     file = "LICENSE.md",
-    spdx = "Apacle-2.0",
+    spdx = "Apache-2.0",
   },
   -- loading
   lazy = true,
