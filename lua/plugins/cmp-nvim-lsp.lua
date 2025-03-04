@@ -2,6 +2,11 @@ local spec = {
   -- source
   "hrsh7th/cmp-nvim-lsp",
   commit = "99290b3ec1322070bcfb9e846450a46f6efa50f0",
+  -- sbom
+  license = {
+    file = "LICENSE",
+    spdx = "MIT",
+  },
   -- config
   dependencies = {
     "nvim-lspconfig",

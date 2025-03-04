@@ -2,6 +2,11 @@ local spec = {
   -- source
   "Exafunction/codeium.nvim",
   commit = "27d2b1ce8c7ba14dbf6e4504bdea8e5548be5476",
+  -- sbom
+  license = {
+    file = "LICENSE",
+    spdx = "MIT",
+  },
   -- config
   dependencies = {
     "plenary.nvim",

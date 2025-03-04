@@ -80,6 +80,11 @@ vim.api.nvim_create_user_command("Conform", clean, { range = true })
 local spec = {
   "stevearc/conform.nvim",
   commit = "a6f5bdb78caa305496357d17e962bbc4c0b392e2", -- v9.0.0
+  -- sbom
+  license = {
+    file = "LICENSE",
+    spdx = "MIT",
+  },
   opts = {
     formatters_by_ft = formatters,
     formatters = {

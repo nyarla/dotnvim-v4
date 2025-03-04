@@ -2,6 +2,11 @@ local spec = {
   -- source
   "mfussenegger/nvim-lint",
   commit = "6e9dd545a1af204c4022a8fcd99727ea41ffdcc8",
+  -- sbom
+  license = {
+    file = "LICENSE.txt",
+    spdx = "GPL-3.0-or-later",
+  },
   -- config
   opts = {
     linters_by_ft = {
