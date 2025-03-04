@@ -79,7 +79,7 @@ vim.api.nvim_create_user_command("Conform", clean, { range = true })
 
 local spec = {
   "stevearc/conform.nvim",
-  commit = "363243c03102a531a8203311d4f2ae704c620d9b",
+  commit = "a6f5bdb78caa305496357d17e962bbc4c0b392e2", -- v9.0.0
   opts = {
     formatters_by_ft = formatters,
     formatters = {
