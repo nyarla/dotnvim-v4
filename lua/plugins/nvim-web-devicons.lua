@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "nvim-tree/nvim-web-devicons",
-  commit = "402377242b04be3f4f0f3720bd952df86e946c30",
+  commit = "ab4cfee554e501f497bce0856788d43cf2eb93d7", -- 2025-03-03
   -- loading
   lazy = true,
 }

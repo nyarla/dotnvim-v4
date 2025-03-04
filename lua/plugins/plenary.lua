@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "nvim-lua/plenary.nvim",
-  commit = "3707cdb1e43f5cea73afb6037e6494e7ce847a66",
+  commit = "857c5ac632080dba10aae49dba902ce3abf91b35",
   -- loading
   lazy = true,
 }
