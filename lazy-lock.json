@@ -19,7 +19,7 @@
   "nvim-treesitter": { "branch": "master", "commit": "4e701776f8824fc188a6254f57d080971ce28c92" },
   "nvim-web-devicons": { "branch": "master", "commit": "ab4cfee554e501f497bce0856788d43cf2eb93d7" },
   "nvim-window-picker": { "branch": "main", "commit": "6382540b2ae5de6c793d4aa2e3fe6dbb518505ec" },
-  "plenary.nvim": { "branch": "master", "commit": "3707cdb1e43f5cea73afb6037e6494e7ce847a66" },
+  "plenary.nvim": { "branch": "master", "commit": "857c5ac632080dba10aae49dba902ce3abf91b35" },
   "vim-perl": { "branch": "dev", "commit": "25ecb0061a3558d242a471b162aad20e4308815d" },
   "vim-vsnip": { "branch": "master", "commit": "02a8e79295c9733434aab4e0e2b8c4b7cea9f3a9" }
 }
