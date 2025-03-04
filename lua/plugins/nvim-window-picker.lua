@@ -1,10 +1,13 @@
 local spec = {
   -- source
   "s1n7ax/nvim-window-picker",
-  commit = "0dfef64eaf063e1cd27983ab11a30e7bc5b74fac",
+  commit = "6382540b2ae5de6c793d4aa2e3fe6dbb518505ec", -- v2.4.0
   -- config
   opts = {
     hint = "floating-big-letter",
+    picker_config = {
+      handle_mouse_click = true,
+    },
     selection_chars = "ABCDEFGHIJKLMN",
     show_prompt = false,
     filter_rules = {
