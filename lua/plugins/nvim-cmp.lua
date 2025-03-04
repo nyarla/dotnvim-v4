@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "hrsh7th/nvim-cmp",
-  commit = "12509903a5723a876abd65953109f926f4634c30",
+  commit = "c27370703e798666486e3064b64d59eaf4bdc6d5", -- 2025-03-01
   -- config
   dependencies = {
     -- library
