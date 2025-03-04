@@ -6,6 +6,7 @@ local spec = {
   dependencies = {
     -- library
     "lspkind.nvim",
+    "vim-vsnip",
 
     -- completor
     "cmp-buffer",
@@ -53,7 +54,7 @@ local spec = {
 
       snippet = {
         expand = function(args)
-          vim.fn["vsnip#anonymouse"](args.body)
+          vim.fn["vsnip#anonymous"](args.body)
         end,
       },
 
