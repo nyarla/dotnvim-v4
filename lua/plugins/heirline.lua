@@ -3,6 +3,12 @@ local theme = require("lib.theme")
 local spec = {
   "rebelot/heirline.nvim",
   commit = "af3f441ea10f96105e1af14cd37bf213533812d2",
+  -- sbom
+  license = {
+    file = "LICENSE",
+    spdx = "MIT",
+  },
+  -- loading
   lazy = false,
   dependencies = {
     "nvim-web-devicons",

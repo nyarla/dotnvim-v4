@@ -2,6 +2,11 @@ local spec = {
   -- source
   "hrsh7th/nvim-cmp",
   commit = "c27370703e798666486e3064b64d59eaf4bdc6d5", -- 2025-03-01
+  -- sbom
+  license = {
+    file = "LICENSE",
+    spdx = "MIT",
+  },
   -- config
   dependencies = {
     -- library

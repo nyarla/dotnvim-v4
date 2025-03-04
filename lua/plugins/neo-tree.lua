@@ -2,6 +2,11 @@ local spec = {
   -- source
   "nvim-neo-tree/neo-tree.nvim",
   commit = "e96fd85bf18bc345dab332b345098fa5460dffac", -- v3.30
+  -- sbom
+  license = {
+    file = "LICENSE",
+    spdx = "MIT",
+  },
   -- config
   dependencies = {
     "plenary.nvim",

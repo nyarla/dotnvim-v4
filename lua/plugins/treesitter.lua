@@ -3,6 +3,11 @@ local spec = {
   "nvim-treesitter/nvim-treesitter",
   commit = "1adcd5711929e44d1bc9e59fbf7d94656cf6d389",
   build = ":TSUpdate",
+  -- sbom
+  license = {
+    file = "LICENSE",
+    spdx = "Apache-2.0",
+  },
   -- config
   main = "nvim-treesitter.configs",
   opts = {

@@ -2,6 +2,11 @@ local spec = {
   -- source
   "onsails/lspkind.nvim",
   commit = "d79a1c3299ad0ef94e255d045bed9fa26025dab6",
+  -- sbom
+  license = {
+    file = "LICENSE",
+    spdx = "MIT",
+  },
   -- config
   opts = {
     symbol_map = {

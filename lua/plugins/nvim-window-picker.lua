@@ -2,6 +2,11 @@ local spec = {
   -- source
   "s1n7ax/nvim-window-picker",
   commit = "6382540b2ae5de6c793d4aa2e3fe6dbb518505ec", -- v2.4.0
+  -- sbom
+  license = {
+    file = "LICENSE",
+    spdx = "MIT",
+  },
   -- config
   opts = {
     hint = "floating-big-letter",
