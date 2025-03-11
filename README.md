@@ -8,8 +8,6 @@ My dotfiles using the these plugins.
 
 The using plugins lisenses as follows:
 
-## Using plugins
-
 - [cmp-buffer](https://github.com/hrsh7th/cmp-buffer/) - [MIT](https://github.com/hrsh7th/cmp-buffer/blob/3022dbc9166796b644a841a02de8dd1cc1d311fa/LICENSE)
 - [cmp-cmdline](https://github.com/hrsh7th/cmp-cmdline/) - [MIT](https://github.com/hrsh7th/cmp-cmdline/blob/d250c63aa13ead745e3a40f61fdd3470efde3923/LICENSE)
 - [cmp-nvim-lsp](https://github.com/hrsh7th/cmp-nvim-lsp/) - [MIT](https://github.com/hrsh7th/cmp-nvim-lsp/blob/99290b3ec1322070bcfb9e846450a46f6efa50f0/LICENSE)
@@ -33,7 +31,7 @@ The using plugins lisenses as follows:
 - [treesitter](https://github.com/nvim-treesitter/nvim-treesitter/) - [Apache-2.0](https://github.com/nvim-treesitter/nvim-treesitter/blob/1adcd5711929e44d1bc9e59fbf7d94656cf6d389/LICENSE)
 - [vim-vsnip](https://github.com/hrsh7th/vim-vsnip/) - [MIT](https://github.com/hrsh7th/vim-vsnip/blob/02a8e79295c9733434aab4e0e2b8c4b7cea9f3a9/LICENSE)
 
-If you find to my mistake about licenses, please contact by [GitHub issues](./issues).
+If you find to my mistake about somethings, please contact by [GitHub Issues](https://github.com/nyarla/dotnvim-v4/issues).
 
 ## License
 
