@@ -119,7 +119,7 @@ hi("@keyword.function.lua", T.emphasis_blue, nil, { bold = true })
 hi("Cursor", nil, nil, { reverse = true })
 hi("CursorLine", nil, T.emphasis_background)
 
-hi("Virtual", T.black, T.highlight_blue)
+hi("Visual", nil, nil, { reverse = true })
 
 hi("LineNr", T.dim_foreground)
 hi("CursorLineNr", T.highlight_white, nil, { bold = true })
