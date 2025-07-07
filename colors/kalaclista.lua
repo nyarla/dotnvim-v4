@@ -136,6 +136,12 @@ hi("MatchPattern", T.emphasis_red)
 hi("ErrorMsg", T.black, T.highlight_red)
 hi("WarningsMsg", T.black, T.highlight_yellow)
 
+-- Line
+-- ----
+hi("StatusLine", nil, nil, { reverse = false })
+hi("StatusLineNC", nil, nil, { reverse = false })
+hi("TabLineFill", nil, nil, { reverse = false })
+
 -- Popup
 -- -----
 hi("Pmenu", T.foreground, T.background)
