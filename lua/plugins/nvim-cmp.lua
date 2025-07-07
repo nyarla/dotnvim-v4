@@ -20,7 +20,6 @@ local spec = {
     "cmp-path",
     "cmp-treesitter",
     "cmp-vsnip",
-    "minuet-ai.nvim",
   },
   config = function(plugin, opts)
     local cmp = require("cmp")
@@ -50,7 +49,6 @@ local spec = {
     cmp.setup({
       -- completion
       sources = cmp.config.sources({
-        { name = "minuet" },
         { name = "nvim_lsp" },
         { name = "treesitter" },
         { name = "buffer" },
@@ -85,7 +83,6 @@ local spec = {
           behavior = cmp.SelectBehavior.Insert,
         }),
         ["<CR>"] = cmp.mapping.confirm({ behavior = cmp.ConfirmBehavior.Insert, select = true }),
-        ["<C-Enter>"] = require("minuet").make_cmp_map(),
       }),
 
       -- interface
