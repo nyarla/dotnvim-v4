@@ -1,7 +1,15 @@
 local lib = require("lib.path")
 
-local defaultTextlintPath = vim.env.HOME .. "/Applications/Programs/textlint/node_modules/.bin/textlint"
-local defaultTextlintrcPath = vim.env.HOME .. "/Applications/Programs/textlint/ja/.textlintrc.yaml"
+local textlintRepository = vim.env.HOME .. "/Applications/Programs/textlint"
+local textlintDefaultBin = vim.env.HOME .. "/Applications/Programs/textlint/bin/textlint"
+
+local function detectLanguage()
+  if vim.g.textlintrc ~= nil then
+    return vim.g.textlintrc
+  end
+
+  return "ja"
+end
 
 local function detectTextlintrc()
   local path = vim.fn.expand("%:p")
@@ -9,12 +17,15 @@ local function detectTextlintrc()
   local fn = ".textlintrc"
   local exts = { "cjs", "js", "json", "yaml", "yml" }
 
+  local lang = detectLanguage()
+  local defaultTextlintrcPath = textlintRepository .. "/" .. lang .. "/.textlintrc.yaml"
+
   if string.sub(path, 0, #root) ~= root then
     return "--config=" .. defaultTextlintrcPath
   end
 
   local ok, rc = pcall(lib.findup, fn, path, root, exts)
-  if ok then
+  if ok and rc ~= nil then
     return "--config=" .. rc
   end
 
@@ -27,15 +38,15 @@ local function detectTextlint()
   local fn = "/node_modules/.bin/textlint"
 
   if string.sub(path, 0, #root) ~= root then
-    return defaultTextlintPath
+    return textlintDefaultBin
   end
 
   local ok, exe = pcall(lib.findup, fn, path, root)
-  if not ok then
-    return defaultTextlintPath
+  if ok and exe ~= nil then
+    return lib.findexe({ exe, textlintDefaultBin })
   end
 
-  return lib.findexe({ exe, defaultTextlintPath })
+  return textlintDefaultBin
 end
 
 local function filename()
