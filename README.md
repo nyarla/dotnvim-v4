@@ -15,7 +15,6 @@ The using plugins lisenses as follows:
 - [cmp-treesitter](https://github.com/ray-x/cmp-treesitter/) - [GPL-3.0-or-later](https://github.com/ray-x/cmp-treesitter/blob/958fcfa0d8ce46d215e19cc3992c542f576c4123/LICENSE)
 - [cmp-vsnip](https://github.com/hrsh7th/cmp-vsnip/) - [MIT](https://github.com/hrsh7th/cmp-vsnip/blob/989a8a73c44e926199bfd05fa7a516d51f2d2752/LICENSE)
 - [conform](https://github.com/stevearc/conform.nvim/) - [MIT](https://github.com/stevearc/conform.nvim/blob/3543d000dafbc41cc7761d860cfdb24e82154f75/LICENSE)
-- [editorconfig](https://github.com/gpanders/editorconfig.nvim/) - [GPL-3.0-or-later](https://github.com/gpanders/editorconfig.nvim/blob/5b9e303e1d6f7abfe616ce4cc8d3fffc554790bf/LICENSE)
 - [heirline](https://github.com/rebelot/heirline.nvim/) - [MIT](https://github.com/rebelot/heirline.nvim/blob/fae936abb5e0345b85c3a03ecf38525b0828b992/LICENSE)
 - [lspkind](https://github.com/onsails/lspkind.nvim/) - [MIT](https://github.com/onsails/lspkind.nvim/blob/d79a1c3299ad0ef94e255d045bed9fa26025dab6/LICENSE)
 - [neo-tree](https://github.com/nvim-neo-tree/neo-tree.nvim/) - [MIT](https://github.com/nvim-neo-tree/neo-tree.nvim/blob/f1deac7ecec88c28a250d890ba7bb35843e69cbd/LICENSE)
