@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "hrsh7th/vim-vsnip",
-  commit = "02a8e79295c9733434aab4e0e2b8c4b7cea9f3a9",
+  commit = "0a4b8419e44f47c57eec4c90df17567ad4b1b36e",
   -- sbom
   license = {
     file = "LICENSE",

@@ -79,7 +79,7 @@ vim.api.nvim_create_user_command("Conform", clean, { range = true })
 
 local spec = {
   "stevearc/conform.nvim",
-  commit = "a6f5bdb78caa305496357d17e962bbc4c0b392e2", -- v9.0.0
+  commit = "3543d000dafbc41cc7761d860cfdb24e82154f75", -- v9.1.0
   -- sbom
   license = {
     file = "LICENSE",

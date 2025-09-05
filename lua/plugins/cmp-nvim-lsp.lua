@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "hrsh7th/cmp-nvim-lsp",
-  commit = "99290b3ec1322070bcfb9e846450a46f6efa50f0",
+  commit = "bd5a7d6db125d4654b50eeae9f5217f24bb22fd3",
   -- sbom
   license = {
     file = "LICENSE",
