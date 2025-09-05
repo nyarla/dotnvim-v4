@@ -2,7 +2,7 @@ local theme = require("lib.theme")
 
 local spec = {
   "rebelot/heirline.nvim",
-  commit = "af3f441ea10f96105e1af14cd37bf213533812d2",
+  commit = "fae936abb5e0345b85c3a03ecf38525b0828b992",
   -- sbom
   license = {
     file = "LICENSE",

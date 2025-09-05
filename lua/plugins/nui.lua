@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "MunifTanjim/nui.nvim",
-  commit = "53e907ffe5eedebdca1cd503b00aa8692068ca46",
+  commit = "de740991c12411b663994b2860f1a4fd0937c130",
   -- sbom
   license = {
     file = "LICENSE",

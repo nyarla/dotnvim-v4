@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "mfussenegger/nvim-lint",
-  commit = "6e9dd545a1af204c4022a8fcd99727ea41ffdcc8",
+  commit = "f126af5345c7472e9a0cdbe1d1a29209be72c4c4",
   -- sbom
   license = {
     file = "LICENSE.txt",
