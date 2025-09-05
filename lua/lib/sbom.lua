@@ -14,7 +14,6 @@ local plugins = {
   "editorconfig",
   "heirline",
   "lspkind",
-  "minuet-ai",
   "neo-tree",
   "nui",
   "nvim-cmp",
