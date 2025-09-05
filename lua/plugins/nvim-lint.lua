@@ -13,6 +13,7 @@ local spec = {
       dockerfile = { "hadolint" },
       markdown = { "textlint" },
       nix = { "statix", "deadnix" },
+      ["yaml.ghaction"] = { "actionlint" },
     },
     linters = {
       textlint = require("components.nvim-lint.textlint"),
