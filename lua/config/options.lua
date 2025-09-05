@@ -32,6 +32,8 @@ function M.setup()
     updatetime = 500,
   }
 
+  vim.g.editorconfig = true
+
   -- set global options
   for key, value in pairs(options) do
     opt(key, value)
