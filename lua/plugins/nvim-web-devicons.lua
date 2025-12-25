@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "nvim-tree/nvim-web-devicons",
-  commit = "6e51ca170563330e063720449c21f43e27ca0bc1", -- 2025-09-04
+  commit = "6788013bb9cb784e606ada44206b0e755e4323d7", -- 2025-12-21
   -- sbom
   license = {
     file = "LICENSE",

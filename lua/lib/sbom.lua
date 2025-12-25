@@ -11,7 +11,6 @@ local plugins = {
   "cmp-treesitter",
   "cmp-vsnip",
   "conform",
-  "editorconfig",
   "heirline",
   "lspkind",
   "neo-tree",
