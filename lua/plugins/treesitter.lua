@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "nvim-treesitter/nvim-treesitter",
-  commit = "6e42d823ce0a5a76180c473c119c7677738a09d1",
+  commit = "7b6cc8949f9999c5ed91436cbe24aa5f99c42025",
   -- sbom
   license = {
     file = "LICENSE",

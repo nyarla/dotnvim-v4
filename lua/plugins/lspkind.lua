@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "onsails/lspkind.nvim",
-  commit = "d79a1c3299ad0ef94e255d045bed9fa26025dab6",
+  commit = "c7274c48137396526b59d86232eabcdc7fed8a32",
   -- sbom
   license = {
     file = "LICENSE",
