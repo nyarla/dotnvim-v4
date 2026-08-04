@@ -12,12 +12,8 @@ local spec = {
   opts = {
     ensure_install = "all",
     sync_install = false,
-    ignore_install = {
-      "perl",
-    },
     highlight = {
       enable = true,
-      disable = { "perl" },
     },
   },
 }
