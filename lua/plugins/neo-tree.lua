@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "nvim-neo-tree/neo-tree.nvim",
-  commit = "f3df514fff2bdd4318127c40470984137f87b62e", -- v3.38.0
+  commit = "83e7a2982fd12b9c3d35bc39dd5877cd91a02a61", -- v3.41.0
   -- sbom
   license = {
     file = "LICENSE",
