@@ -34,13 +34,9 @@ local spec = {
   },
 
   config = function(_, opts)
-    local lspconfig = require("lspconfig")
-    local capabilities = require("cmp_nvim_lsp").default_capabilities()
-
-    for server, options in pairs(opts) do
-      options.capabilities = capabilities
-      lspconfig[server].setup(options)
-    end
+    vim.lsp.config("*", {
+      capabilities = require("cmp_nvim_lsp").default_capabilities(),
+    })
   end,
   -- loading
   lazy = true,

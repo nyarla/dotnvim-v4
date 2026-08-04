@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "hrsh7th/cmp-cmdline",
-  commit = "d250c63aa13ead745e3a40f61fdd3470efde3923",
+  commit = "d126061b624e0af6c3a556428712dd4d4194ec6d",
   -- sbom
   license = {
     file = "LICENSE",

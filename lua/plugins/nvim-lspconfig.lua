@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "neovim/nvim-lspconfig",
-  commit = "5bfcc89fd155b4ffc02d18ab3b7d19c2d4e246a7", -- v2.5.0
+  commit = "b89138d9af0a96e6048e202a15765fc6b6416bd4", -- v2.11.0
   -- sbom
   license = {
     file = "LICENSE.md",

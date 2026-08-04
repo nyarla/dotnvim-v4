@@ -1,7 +1,7 @@
 local spec = {
   -- source
   "hrsh7th/nvim-cmp",
-  commit = "d97d85e01339f01b842e6ec1502f639b080cb0fc", -- 2025-11-16
+  commit = "2ffe79f1f021def8dd1fcd81deb16f1bb0d989f3", -- updated at 2026-08-04
   -- sbom
   license = {
     file = "LICENSE",
@@ -96,8 +96,8 @@ local spec = {
       },
 
       window = {
-        completion = cmp.config.window.bordered({ scrollbar = false }),
-        documentation = cmp.config.window.bordered({ scrollbar = false }),
+        completion = cmp.config.window.bordered({ border = "rounded", scrollbar = false }),
+        documentation = cmp.config.window.bordered({ border = "rounded", scrollbar = false }),
       },
     })
 
