@@ -2,7 +2,7 @@ local M = {}
 
 M.lazy = {
   repo = "https://github.com/folke/lazy.nvim.git",
-  rev = "85c7ff3711b730b4030d03144f6db6375044ae82", -- v11.17.5
+  rev = require("plugins.lazy").commit,
   path = vim.fn.stdpath("data") .. "/lazy/lazy.nvim",
 }
 
@@ -48,19 +48,18 @@ function M.init()
   end
 
   -- update lazy.nvim
-  M.exec({
-    { { "git", "fetch", "origin", M.lazy.rev }, opts },
-    { { "git", "reset", "--hard", M.lazy.rev }, opts },
-  })
+  if M.rev() ~= M.lazy.rev then
+    M.exec({
+      { { "git", "fetch", "origin", M.lazy.rev }, opts },
+      { { "git", "reset", "--hard", M.lazy.rev }, opts },
+    })
+  end
 end
 
 function M.setup()
-  if M.rev() ~= M.lazy.rev then
-    M.init()
-  end
+  M.init()
 
   vim.opt.rtp:prepend(M.lazy.path)
-
   require("lazy").setup({
     spec = {
       { import = "plugins" },
