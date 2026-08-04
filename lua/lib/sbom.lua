@@ -20,7 +20,6 @@ local plugins = {
   "nvim-lspconfig",
   "nvim-web-devicons",
   "nvim-window-picker",
-  "perl",
   "plenary",
   "treesitter",
   "vim-vsnip",
